@@ -9,8 +9,14 @@ internal static class Program
             new Dog(), new Cat()
         };
 
-        // PrintAnimalSounds(animals);
+        PrintAnimalSounds(animals);
     }
 
-    // TODO: add PrintAnimalSounds method here
+    private static void PrintAnimalSounds(Animal[] animals)
+    {
+        foreach (Animal animal in animals)
+        {
+            Console.WriteLine("This animal makes: " + animal.MakeSound());
+        }
+    }
 }
