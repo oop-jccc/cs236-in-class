@@ -1,14 +1,11 @@
 namespace main;
 
-public class Cat : Animal, IDisplayable
+public class Cat : Animal // TODO: add IDisplayable interface
 {
     public override string MakeSound()
     {
         return "Meow!";
     }
 
-    public string GetDisplayName()
-    {
-        return "Cat";
-    }
+    // TODO: add GetDisplayName method
 }

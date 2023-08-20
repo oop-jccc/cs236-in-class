@@ -2,5 +2,5 @@ namespace main;
 
 public interface IDisplayable
 {
-    string GetDisplayName();
+    // TODO: add GetDisplayName method
 }

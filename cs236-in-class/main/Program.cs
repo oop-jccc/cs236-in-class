@@ -6,17 +6,11 @@ internal static class Program
     {
         IDisplayable[] animals =
         {
-            new Dog(), new Cat()
+           // new Dog(), new Cat()
         };
 
-        PrintDisplayNames(animals);
+       // PrintDisplayNames(animals);
     }
 
-    private static void PrintDisplayNames(IDisplayable[] displayables)
-    {
-        foreach (IDisplayable displayable in displayables)
-        {
-            Console.WriteLine("Display name: " + displayable.GetDisplayName());
-        }
-    }
+    // TODO: add PrintDisplayNames method
 }
