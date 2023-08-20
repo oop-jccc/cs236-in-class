@@ -4,19 +4,19 @@ internal static class Program
 {
     private static void Main()
     {
-        Animal[] animals =
+        IDisplayable[] animals =
         {
             new Dog(), new Cat()
         };
 
-        PrintAnimalSounds(animals);
+        PrintDisplayNames(animals);
     }
 
-    private static void PrintAnimalSounds(Animal[] animals)
+    private static void PrintDisplayNames(IDisplayable[] displayables)
     {
-        foreach (Animal animal in animals)
+        foreach (IDisplayable displayable in displayables)
         {
-            Console.WriteLine("This animal makes: " + animal.MakeSound());
+            Console.WriteLine("Display name: " + displayable.GetDisplayName());
         }
     }
 }

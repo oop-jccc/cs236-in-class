@@ -1,23 +1,26 @@
 @startuml
 
+interface IDisplayable {
+    +GetDisplayName() : string
+}
+
 abstract class Animal {
-  + abstract MakeSound() : string
+    +MakeSound() : string
 }
 
 class Dog {
-  + MakeSound() : string
+    +MakeSound() : string
+    +GetDisplayName() : string
 }
 
 class Cat {
-  + MakeSound() : string
-}
-
-class Program {
-  + static Main(args : string[]) : void
+    +MakeSound() : string
+    +GetDisplayName() : string
 }
 
 Animal <|-- Dog
 Animal <|-- Cat
-Program ..> Animal
+IDisplayable <|.. Dog
+IDisplayable <|.. Cat
 
 @enduml
