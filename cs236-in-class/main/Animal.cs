@@ -1,5 +1,6 @@
 namespace main;
 
-public class Animal
+public class Animal // TODO: Make abstract
 {
+    // TODO: Add MakeSound() method
 }
