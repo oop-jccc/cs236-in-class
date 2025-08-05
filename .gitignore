@@ -1,4 +1,4 @@
-
+﻿
 # Created by https://www.toptal.com/developers/gitignore/api/jetbrains+all,visualstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=jetbrains+all,visualstudio
 
@@ -492,3 +492,6 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/jetbrains+all,visualstudio
+
+# JetBrains IDEs
+.idea/
