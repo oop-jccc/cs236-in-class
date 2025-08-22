@@ -2,7 +2,7 @@
   "name": ".NET High-Performance Environment",
   "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
   "hostRequirements": {
-    "cpus": 8,
+    "cpus": 4,
     "memory": "16gb"
   },
   "customizations": {
@@ -23,6 +23,6 @@
     }
   },
   "forwardPorts": [],
-  "postCreateCommand": "dotnet restore cs236-in-class/main/main.csproj",
+  "postCreateCommand": "dotnet restore cs236-in-class/cs236-in-class.sln",
   "remoteUser": "vscode"
 }
